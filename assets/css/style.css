@@ -28,50 +28,50 @@ html {
     font-family: 'Outfit', sem serifa;
 }
 
-body {
-    
-
-}
-
-
 .main {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 144rem;
-    height: 100vh;
+    display: flex;
+    margin: auto;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: var(--light-gray);
+    justify-content: center;
+    align-items: center;
 }
 
-.main-content{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    
+.main-content{   
+    display: flex;
+    flex-direction: column; 
     background-color: var(--white);
-    width: 28.68rem;
-    height: 45rem;
+    width: 27.5rem;
+    height: 42.8rem;
     border-radius: 2rem;
+
 }
 
-.place-qr{
-    margin: 1.4rem 1.4rem;
-    width: 26rem;
-    height: 26rem;
+.place-img{
+    width: 100%;
+    height:auto;
+    padding: 1.35rem;
+
+    
+}
+
+.place-img img {
+    width: 100%;
     border-radius: 0.8rem;
-    background-image: url("../img/image-qr-code.png");
-    background-size:cover;
+    
 }
-
-
 
 .place-text {
-    font-family: Arial, Helvetica;
-    margin: 2.3rem 2.1rem;
-    width: 23rem;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     height: auto;
+    font-family: Arial, Helvetica;
     text-align: center;
+    padding: 0 2rem 0 2rem;
+    word-spacing:0.22rem;
 }
 
 .place-text h1 {
@@ -83,43 +83,5 @@ body {
     padding: 1rem;
     font-size: 1.21rem;
     line-height: 1.8rem;
-    word-spacing:0.22rem;
-}
-
-
-@media screen and (max-width: 800px){
-    html {
-        font-size: 80%;
-    }
-    .main-content{
-        transform: translateX(-25%) translateY(-40%);
-    }
-    body {
-        background-color: var(--light-gray);
-
-    }
-}
-@media screen and (max-width: 600px){
-    html {
-        font-size: 100%;
-    }
-    .main-content{
-        transform: translateX(-10%) translateY(-20%);
-    }
-    body {
-        background-color: var(--light-gray);
-
-    }
-}
-@media screen and (max-width: 400px){
-    html {
-        font-size: 130%;
-    }
-    .main-content{
-        transform: translateX(%) translateY(-10%);
-    }
-    body {
-        background-color: var(--light-gray);
-
-    }
+    
 }
